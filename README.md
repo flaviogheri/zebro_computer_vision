@@ -18,3 +18,18 @@ If you want to train a model locally, please download this repository and the cl
 
 [google bucket](https://storage.googleapis.com/polygon_bucket/data.zip)
 
+
+
+## Converting the model to Onnx
+
+
+In order to convert the model to ONNX format (which will later be used on the rover), please follow the following steps (assumed on linux terminal):
+
+```
+yolo export model=*insert your model* format=onnx opset=13 simplify
+```
+
+in my case this was
+```
+yolo export model=weights/best_nano10.pt format=onnx opset=13 simplify
+```
