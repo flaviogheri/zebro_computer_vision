@@ -33,3 +33,10 @@ in my case this was
 ```
 yolo export model=weights/best_nano10.pt format=onnx opset=13 simplify
 ```
+
+
+## Model Testing
+
+Currently the model inference using the ONNX on real data is bad. For this reason the model was not succesfully loaded into the final rover code. Nonetheless, the preprocessing steps are performed and tested within the ```test_onnx.py``` file in the main directory. 
+
+In later stages, the idea is that the same preprocessing will be done on the final rover.
