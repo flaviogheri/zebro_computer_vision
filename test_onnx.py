@@ -66,7 +66,7 @@ if __name__ == "__main__":
 
 
     # change this to your model path
-    model_path = 'best_nano10.onnx'
+    model_path = 'weights/best_nano10.onnx'
     session = ort.InferenceSession(model_path)
 
 
